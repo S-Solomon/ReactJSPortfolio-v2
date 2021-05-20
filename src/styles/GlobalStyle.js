@@ -72,6 +72,12 @@ body {
     background-color: var(--background-dark-color);
     color: var(--font-light-color);
     transition: all .4s ease-in-out;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    font-family: inherit;
+    color: inherit;
 }
 
 
