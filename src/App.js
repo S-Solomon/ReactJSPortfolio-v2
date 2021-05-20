@@ -1,10 +1,16 @@
+import styled from 'styled-components'
 
 function App() {
   return (
-    <div className="App">
+    <AppStyled>
       <h1>Styled Components</h1>
-    </div>
+    </AppStyled>
   );
 }
+
+
+const AppStyled = styled.div `
+  background-color: red;
+`;
 
 export default App;
