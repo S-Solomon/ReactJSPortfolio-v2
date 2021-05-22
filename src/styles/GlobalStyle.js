@@ -73,6 +73,7 @@ body {
     color: var(--font-light-color);
     transition: all .4s ease-in-out;
     font-family: 'Nunito', sans-serif;
+    overscroll-behavior: none;
 }
 
 a {
