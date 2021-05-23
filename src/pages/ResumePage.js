@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Skills from '../Components/Skills';
+import { MainLayout} from '../styles/Layouts';
+import Resume from '../Components/Resume';
 
 function ResumePage() {
     return (
-        <div>
-            <h1>ResumePage</h1>
-        </div>
+        <MainLayout>
+            <Skills />
+            <Resume />
+        </MainLayout>
     )
 }
 
