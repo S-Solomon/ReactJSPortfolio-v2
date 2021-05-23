@@ -3,13 +3,13 @@ import styled from 'styled-components'
 
 function PrimaryButton( {title} ) {
     return (
-        <PrimaryButtonStyled>
+        <PrimaryButtonStyled type="submit">
             {title}
         </PrimaryButtonStyled>
     )
 }
 
-const PrimaryButtonStyled = styled.a `
+const PrimaryButtonStyled = styled.button `
     background-color: var(--primary-color);
     padding: .8rem 2.5rem;
     color: white;
@@ -19,6 +19,7 @@ const PrimaryButtonStyled = styled.a `
     text-transform: uppercase;
     position: relative;
     transition: all .4s ease-in-out;
+    border: none;
     &::after{
         content: "";
         position: absolute;

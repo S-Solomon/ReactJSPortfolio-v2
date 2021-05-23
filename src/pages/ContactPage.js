@@ -25,11 +25,11 @@ function ContactPage() {
                         <form  className="form">
                             <div className="form-field">
                                 <label htmlFor="name"  >Enter your name*</label>
-                                <input type="text" id="name" />
+                                <input type="text" id="name"  required/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="email"  >Enter your email*</label>
-                                <input type="email" id="email" />
+                                <input type="email" id="email" required/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="subject"  >Enter your subject</label>
@@ -37,7 +37,7 @@ function ContactPage() {
                             </div>
                             <div className="form-field">
                                 <label htmlFor="text-area">Enter your Message*</label>
-                                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                                <textarea name="textarea" id="textarea" cols="30" rows="10" required></textarea>
                             </div>
                             <div className="form-field f-button">
                                 <PrimaryButton title={'Send Email'} />
