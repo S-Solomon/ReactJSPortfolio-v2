@@ -3,7 +3,33 @@ import styled from 'styled-components'
 import avatar from '../img/avatar.jpg'
 import { NavLink } from 'react-router-dom'
 
+import Brightness4Icon from '@material-ui/icons/Brightness4';
+import Switch from '@material-ui/core/Switch'
+import { useState } from "react";
+import { useEffect } from "react";
+
+
 function Navigation() {
+    const [checked, setChecked] = useState(false);
+    const [theme, setTheme] = useState('dark-theme');
+
+    useEffect(()=>{
+        document.documentElement.className = theme;
+    }, [theme]);
+
+    const themeToggler = () =>{
+        if(theme === 'light-theme'){
+            setTheme('dark-theme');
+            setChecked(false)
+        }else{
+            setTheme('light-theme');
+            setChecked(true)
+        }
+    }
+
+
+
+
     return (
         <NavigationStyled>
             <div className="avatar">
@@ -30,7 +56,23 @@ function Navigation() {
                 </li>
             </ul>
             <footer className="footer">
-                <p>@2021 all rights reserved</p>
+                {/* <p>@2021 all rights reserved</p> */}
+                <div className="theme">
+                    <div className="light-dark-mode">
+                        <div className="left-content">
+                            <Brightness4Icon style={{ fontSize: 20}}/>
+                        </div>
+                        <div className="right-content">
+                            <Switch
+                                value=""
+                                checked={checked}
+                                inputProps={{ 'aria-label': '' }}
+                                size="small"
+                                onClick={themeToggler}                
+                            />
+                        </div>
+                    </div>
+                </div>
             </footer>
         </NavigationStyled>
     )
@@ -105,8 +147,16 @@ const NavigationStyled = styled.nav `
     }
 
     footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-top: 1px solid var(--border-color);
         width: 100%;
+        padding: 1rem 0;
+        .theme {
+            .light-dark-mode {
+            }
+        }
         p {
             padding: 2rem 0;
             font-size: 1.1rem;

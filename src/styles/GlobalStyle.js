@@ -118,14 +118,15 @@ h6{
     margin-bottom: 4rem;
 }
 
-//Floting Toggler
+//Floating Toggler
 .light-dark-mode{
-    position: fixed;
+    position: relative;
+    ${'' /* position: fixed;
     right: 0;
-    top: 50%;
+    top: 50%; */}
     background-color: var(--background-light-color-2);
-    width: 6.5rem;
-    height: 2.5rem;
+    width: 4.5rem;
+    height: 2rem;
     z-index: 15;
     display: flex;
     align-items: center;
@@ -137,10 +138,10 @@ h6{
         color: var(--white-color);
     }
 }
-//Nav Toggler
+//NavToggler
 .ham-burger-menu{
     position: absolute;
-    right: 5%;
+    right: 3%;
     top: 3%; 
     display: none;
     z-index: 15;

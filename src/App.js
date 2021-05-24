@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import styled from 'styled-components'
 import Sidebar from "./Components/Sidebar";
 import HomePage from './pages/HomePage';
@@ -11,12 +11,12 @@ import ContactPage from './pages/ContactPage'
 import { Route, Switch as Switching } from 'react-router';
 
 
-import Brightness4Icon from '@material-ui/icons/Brightness4';
+// import Brightness4Icon from '@material-ui/icons/Brightness4';
 
 import { IconButton } from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
 
-import Switch from '@material-ui/core/Switch'
+// import Switch from '@material-ui/core/Switch'
 
 
 
@@ -27,24 +27,24 @@ import Switch from '@material-ui/core/Switch'
 
 function App() {
 
-  const [theme, setTheme] = useState('dark-theme');
-  const [checked, setChecked] = useState(false);
+  // const [theme, setTheme] = useState('dark-theme');
+  // const [checked, setChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
 
 
-  useEffect(()=>{
-    document.documentElement.className = theme;
-  }, [theme]);
+  // useEffect(()=>{
+  //   document.documentElement.className = theme;
+  // }, [theme]);
 
-  const themeToggler = () =>{
-    if(theme === 'light-theme'){
-      setTheme('dark-theme');
-      setChecked(false)
-    }else{
-      setTheme('light-theme');
-      setChecked(true)
-    }
-  }
+  // const themeToggler = () =>{
+  //   if(theme === 'light-theme'){
+  //     setTheme('dark-theme');
+  //     setChecked(false)
+  //   }else{
+  //     setTheme('light-theme');
+  //     setChecked(true)
+  //   }
+  // }
 
   return (
     <div className="App">
@@ -52,23 +52,23 @@ function App() {
 
 
 
-      <div className="theme">
+      {/* <div className="theme">
           <div className="light-dark-mode">
               <div className="left-content">
-                <Brightness4Icon />
+                <Brightness4Icon style={{ fontSize: 20}}/>
               </div>
               <div className="right-content">
                 <Switch
                   value=""
                   checked={checked}
                   inputProps={{ 'aria-label': '' }}
-                  size="medium"
+                  size="small"
                   onClick={themeToggler}
                   
                 />
               </div>
             </div>
-        </div>
+        </div> */}
 
         <div className="ham-burger-menu">
           <IconButton onClick={() => setNavToggle(!navToggle)}>

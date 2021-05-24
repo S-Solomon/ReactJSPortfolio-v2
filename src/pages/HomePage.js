@@ -12,7 +12,7 @@ function HomePage() {
                 <Particle />
             </div>
             <div className="typography">
-                <h1>Hi I'm <span>lorem ipsum</span></h1>
+                <h1>Hi, I'm <span>lorem ipsum</span></h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ut ullam dolorum laborum ea inventore vero itaque cum
@@ -80,19 +80,19 @@ const HomePageStyled = styled.header `
             }
             .i-youtube {
                 &:hover {
-                    border: 2px solid var(--primary-color);
+                    border: 2px solid red;
                     color: red;
                 }
             }
             .i-github {
                 &:hover {
-                    border: 2px solid var(--primary-color);
+                    border: 2px solid purple;
                     color: purple;
                 }
             }
             .i-facebook {
                 &:hover {
-                    border: 2px solid var(--primary-color);
+                    border: 2px solid blue;
                     color: blue;
                 }
             }
