@@ -50,6 +50,13 @@ function App() {
     <div className="App">
       <Sidebar navToggle={navToggle}/>
 
+      <div className="ham-burger-menu">
+          <IconButton onClick={() => setNavToggle(!navToggle)}>
+              <MenuIcon />
+          </IconButton>
+      </div>
+
+
 
 
       {/* <div className="theme">
@@ -70,12 +77,7 @@ function App() {
             </div>
         </div> */}
 
-        <div className="ham-burger-menu">
-          <IconButton onClick={() => setNavToggle(!navToggle)}>
-              <MenuIcon />
-          </IconButton>
-        </div>
-
+        
       <MainContentStyled>
 
         <div className="lines">
@@ -120,6 +122,9 @@ const MainContentStyled = styled.main `
   position: relative;
   margin-left: 16.3rem;
   min-height: 100vh;
+  @media screen and (max-width:1200px){
+    margin-left: 0;
+  }
 
 
   .lines {
