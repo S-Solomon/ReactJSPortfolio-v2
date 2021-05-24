@@ -124,7 +124,8 @@ h6{
     ${'' /* position: fixed;
     right: 0;
     top: 50%; */}
-    background-color: var(--background-light-color-2);
+    ${'' /* background-color: var(--background-light-color-2);
+    background-color: var(--sidebar-dark-color); */}
     width: 4.5rem;
     height: 2rem;
     z-index: 15;
