@@ -76,6 +76,7 @@ const MenuItemStyled = styled.div `
                     height: 3rem;
                     margin: 0 .5rem;
                     transition: all .4s ease-in-out;
+
                     &:hover{
                         background-color: var(--primary-color);
                     }
@@ -96,6 +97,7 @@ const MenuItemStyled = styled.div `
                     height: 0;
                     width: 0;
                     transition: all .4s ease-in-out;
+
                 }
             }
             .portfolio-image:hover{
@@ -107,6 +109,7 @@ const MenuItemStyled = styled.div `
                     justify-content: center;
                     transition: all .4s ease-in-out;
                     opacity: 1;
+
                     li{
                         transition: all .4s ease-in-out;
                         &:hover{
@@ -135,6 +138,7 @@ const MenuItemStyled = styled.div `
                     opacity: 0.9;
                     transform-origin: left;
                     transition: all .4s ease-in-out;
+
                 }
             }
         }
