@@ -22,23 +22,24 @@ function ContactPage() {
                         <div className="contact-title">
                             <h4>Get In Touch</h4>
                         </div>
-                        <form className="form" name="contact" method="POST" data-netlify="true">
+                        <form className="form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                             <div className="form-field">
                                 <label htmlFor="name"  >Enter your name*</label>
-                                <input type="text" id="name"  required/>
+                                <input type="text" id="name" name="name" required/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="email"  >Enter your email*</label>
-                                <input type="email" id="email" required/>
+                                <input type="email" id="email" name="email" required/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="subject"  >Enter your subject</label>
-                                <input type="text" id="subject" />
+                                <input type="text" id="subject" name="subject" />
                             </div>
                             <div className="form-field">
                                 <label htmlFor="text-area">Enter your Message*</label>
                                 <textarea name="textarea" id="textarea" cols="30" rows="10" required></textarea>
                             </div>
+                            <div data-netlify-recaptcha="true"></div> 
                             <div className="form-field f-button">
                                 <PrimaryButton title={'Send Email'} />
                             </div>
