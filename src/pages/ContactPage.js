@@ -22,7 +22,7 @@ function ContactPage() {
                         <div className="contact-title">
                             <h4>Get In Touch</h4>
                         </div>
-                        <form  className="form">
+                        <form className="form" name="contact" method="POST" data-netlify="true">
                             <div className="form-field">
                                 <label htmlFor="name"  >Enter your name*</label>
                                 <input type="text" id="name"  required/>
