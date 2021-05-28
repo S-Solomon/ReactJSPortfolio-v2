@@ -32,7 +32,7 @@ function ContactPage() {
                         </form>
 
 
-                        <form className="form" name="contact" method="POST" data-netlify="true" >
+                        <form className="form" name="contact" method="POST" data-netlify="true" onSubmit="submit" >
                         <input type="hidden" name="form-name" value="contact"></input>
                             <div className="form-field">
                                 <label htmlFor="name"  >Enter your name*</label>
