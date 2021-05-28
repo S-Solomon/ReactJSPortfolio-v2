@@ -23,6 +23,7 @@ function ContactPage() {
                             <h4>Get In Touch</h4>
                         </div>
                         <form className="form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                        <input type="hidden" name="form-name" value="contact"></input>
                             <div className="form-field">
                                 <label htmlFor="name"  >Enter your name*</label>
                                 <input type="text" id="name" name="name" required/>
