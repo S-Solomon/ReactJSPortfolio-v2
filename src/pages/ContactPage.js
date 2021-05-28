@@ -22,7 +22,17 @@ function ContactPage() {
                         <div className="contact-title">
                             <h4>Get In Touch</h4>
                         </div>
-                        <form className="form" name="contact" method="POST" data-netlify="true" >
+
+                        {/* A little help for the Netlify bots if you're not using a SSG  */}
+                        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                            <input type="text" name="name" />
+                            <input type="email" name="email" />
+                            <input type="text" name="subject" />
+                            <textarea name="textarea"></textarea>
+                        </form>
+
+
+                        <form className="form" name="contact" method="POST" >
                         <input type="hidden" name="form-name" value="contact"></input>
                             <div className="form-field">
                                 <label htmlFor="name"  >Enter your name*</label>
