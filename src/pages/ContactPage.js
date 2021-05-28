@@ -22,11 +22,8 @@ function ContactPage() {
                         <div className="contact-title">
                             <h4>Get In Touch</h4>
                         </div>
-
-
-                        <form className="form" name="contact" method="POST" data-netlify="true" onSubmit="submit" >
-                        <input type="hidden" name="form-name" value="contact"></input>
-
+                        <form className="form" name="contact" method="post">
+                        <input type="hidden" name="form-name" value="contact" />
                             <div className="form-field">
                                 <label htmlFor="name"  >Enter your name*</label>
                                 <input type="text" id="name" name="name" required/>
@@ -46,7 +43,6 @@ function ContactPage() {
                             <div className="form-field f-button">
                                 <PrimaryButton title={'Send Email'} />
                             </div>
-
                         </form>
                 </div>
                 <div className="right-content">
