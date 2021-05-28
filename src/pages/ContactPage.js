@@ -40,6 +40,7 @@ function ContactPage() {
                                 <textarea name="textarea" id="textarea" cols="30" rows="10" required></textarea>
                             </div>
                             <div data-netlify-recaptcha="true"></div> 
+
                             <div className="form-field f-button">
                                 <PrimaryButton title={'Send Email'} />
                             </div>
