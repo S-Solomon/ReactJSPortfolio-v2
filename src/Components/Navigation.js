@@ -155,6 +155,9 @@ const NavigationStyled = styled.nav `
         padding: 1rem 0;
         .theme {
             .light-dark-mode {
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
         p {
