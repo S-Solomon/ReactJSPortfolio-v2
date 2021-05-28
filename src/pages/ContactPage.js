@@ -23,14 +23,6 @@ function ContactPage() {
                             <h4>Get In Touch</h4>
                         </div>
 
-                        {/* A little help for the Netlify bots if you're not using a SSG  */}
-                        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-                            <input type="text" name="name" />
-                            <input type="email" name="email" />
-                            <input type="text" name="subject" />
-                            <textarea name="textarea"></textarea>
-                        </form>
-
 
                         <form className="form" name="contact" method="POST" data-netlify="true" onSubmit="submit" >
                         <input type="hidden" name="form-name" value="contact"></input>
@@ -54,7 +46,7 @@ function ContactPage() {
                             <div className="form-field f-button">
                                 <PrimaryButton title={'Send Email'} />
                             </div>
-                            
+
                         </form>
                 </div>
                 <div className="right-content">
