@@ -67,7 +67,7 @@ function Navigation() {
                                 value=""
                                 checked={checked}
                                 inputProps={{ 'aria-label': '' }}
-                                size="medium"
+                                size="small"
                                 onClick={themeToggler}                
                             />
                         </div>
@@ -154,6 +154,7 @@ const NavigationStyled = styled.nav `
         width: 100%;
         padding: 1rem 0;
         .theme {
+            position: relative;
             .light-dark-mode {
                 display: flex;
                 justify-content: center;
