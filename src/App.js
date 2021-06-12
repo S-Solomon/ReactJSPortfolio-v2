@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Sidebar from "./Components/Sidebar";
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ResumePage from './pages/ResumePage';
+// import ResumePage from './pages/ResumePage';
 import PortfoliosPage from './pages/PortfoliosPage';
 import BlogsPage from './pages/BlogsPage'
 import ContactPage from './pages/ContactPage'
@@ -97,9 +97,9 @@ function App() {
           <Route path="/about" exact>
             <AboutPage />
           </Route>
-          <Route path="/resume" exact>
+          {/* <Route path="/resume" exact>
             <ResumePage />
-          </Route>
+          </Route> */}
           <Route path="/portfolios" exact>
             <PortfoliosPage />
           </Route>

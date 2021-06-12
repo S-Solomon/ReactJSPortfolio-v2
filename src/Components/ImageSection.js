@@ -1,16 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import resume from '../img/resume.png'
+// import resume from '../img/resume.png'
 import PrimaryButton from './PrimaryButton'
+import BgAnimation from './BgAnimation' ;
 
 
 
 function ImageSection() {
     return (
         <ImageSectionStyled>
-            <div className="left-content">
-                <img src={resume} alt="resume" />
-            </div>
             <div className="right-content">
                 <h4>I am <span>Lorem Ipsum</span></h4>
                 <p className="paragraph">
@@ -38,6 +36,10 @@ function ImageSection() {
                 </div>
                 <PrimaryButton title={'Download Cv'}/>
             </div>
+            <div className="left-content">
+                {/* <img src={resume} alt="resume" /> */}
+                <BgAnimation />
+            </div>
         </ImageSectionStyled>
     )
 }
@@ -48,7 +50,7 @@ const ImageSectionStyled = styled.div `
     @media screen and (max-width: 1000px){
         flex-direction: column;
         .left-content{
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
     }
     .left-content {
