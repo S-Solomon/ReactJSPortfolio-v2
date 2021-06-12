@@ -90,13 +90,11 @@ const NavigationStyled = styled.nav `
 
     .avatar {
         width: 100%;
-        /* height: 40%; */
         border-bottom: 1px solid var(--border-color);
         text-align: center;
         padding: 1rem 0;
         img {
             width: 70%;
-            /* height: auto; */
             border-radius: 50%;
             border: 8px solid var(--border-color);
         }
