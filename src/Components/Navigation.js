@@ -67,7 +67,7 @@ function Navigation() {
                                 value=""
                                 checked={checked}
                                 inputProps={{ 'aria-label': '' }}
-                                size="small"
+                                size="medium"
                                 onClick={themeToggler}                
                             />
                         </div>
