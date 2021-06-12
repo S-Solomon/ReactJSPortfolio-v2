@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import resume from '../img/resume.jpg'
+import resume from '../img/resume.png'
 import PrimaryButton from './PrimaryButton'
 
 
@@ -54,7 +54,7 @@ const ImageSectionStyled = styled.div `
     .left-content {
         width: 100%;
         img {
-            width: 95%;
+            width: 50%;
             object-fit: cover;
         }
     }
