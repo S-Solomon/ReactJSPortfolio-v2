@@ -91,7 +91,7 @@ const NavigationStyled = styled.nav `
         padding: 1rem 0;
         img {
             width: 70%;
-
+            height: 100%;
             border-radius: 50%;
             border: 8px solid var(--border-color);
         }
