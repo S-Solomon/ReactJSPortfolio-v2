@@ -42,9 +42,6 @@ function Navigation() {
                 <li className="nav-item">
                     <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
                 </li>
-                {/* <li className="nav-item">
-                    <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
-                </li> */}
                 <li className="nav-item">
                     <NavLink to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
                 </li>
@@ -56,7 +53,6 @@ function Navigation() {
                 </li>
             </ul>
             <footer className="footer">
-                {/* <p>@2021 all rights reserved</p> */}
                 <div className="theme">
                     <div className="light-dark-mode">
                         <div className="left-content">

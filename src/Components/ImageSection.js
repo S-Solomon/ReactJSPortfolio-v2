@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import resume from '../img/resume.png'
 import PrimaryButton from './PrimaryButton'
 import BgAnimation from './BgAnimation' ;
 
@@ -37,7 +36,6 @@ function ImageSection() {
                 <PrimaryButton title={'Download Cv'}/>
             </div>
             <div className="left-content">
-                {/* <img src={resume} alt="resume" /> */}
                 <BgAnimation />
             </div>
         </ImageSectionStyled>

@@ -12,7 +12,6 @@ function Sidebar({ navToggle }) {
 
 const SidebarStyled = styled.div `
     position: fixed;
-    /* left: 0; */
     width: 16.3rem;
     height: 100vh;
     background-color: var(--sidebar-dark-color);
