@@ -73,20 +73,20 @@ const HomePageStyled = styled.header `
             }
             .i-youtube {
                 &:hover {
-                    border: 2px solid red;
-                    color: red;
+                    border: 2px solid var(--primary-color);
+                    color: var(--primary-color);
                 }
             }
             .i-github {
                 &:hover {
-                    border: 2px solid purple;
-                    color: purple;
+                    border: 2px solid var(--primary-color);
+                    color: var(--primary-color);
                 }
             }
             .i-facebook {
                 &:hover {
-                    border: 2px solid blue;
-                    color: blue;
+                    border: 2px solid var(--primary-color);
+                    color: var(--primary-color);
                 }
             }
         }
