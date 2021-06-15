@@ -97,9 +97,6 @@ function App() {
           <Route path="/about" exact>
             <AboutPage />
           </Route>
-          {/* <Route path="/resume" exact>
-            <ResumePage />
-          </Route> */}
           <Route path="/portfolios" exact>
             <PortfoliosPage />
           </Route>
