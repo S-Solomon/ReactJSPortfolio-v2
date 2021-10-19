@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import avatar from '../img/avatar.jpg'
+import avatar from '../img/avatar.png'
 import { NavLink } from 'react-router-dom'
 
 import Brightness4Icon from '@material-ui/icons/Brightness4';

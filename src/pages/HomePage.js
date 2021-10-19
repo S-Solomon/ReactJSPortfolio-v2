@@ -12,7 +12,7 @@ function HomePage() {
                 <Particle />
             </div>
             <div className="typography">
-                <h1>Hi, I'm <span>Samuel Solomon</span></h1>
+                <h1>Hi, I'm <span>Lorem Ipsum</span></h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ut ullam dolorum laborum ea inventore vero itaque cum
